@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>A Digital CV</title>
+    <link rel="stylesheet" href="app.css">
   </head>
   <body>
 
@@ -12,98 +13,124 @@
     <!-- My contact information -->
     <h1>Samuel Lyke</h1>
     <!-- email and github -->
-    <p><a href="mailto:thacodesmith@gmail.com">Email</a> &bull; <a href="https://github.com/TheCode-Smith">GitHub</a></p>
+    <div class="contact-info">
+      <p><a href="mailto:thacodesmith@gmail.com">Email</a> &bull; <a href="https://github.com/TheCode-Smith">GitHub</a></p>
+    </div>
 
-
-    <hr>
 
     <!-- Summary of my background -->
-    <h2>About Me</h2>
-    <hr>
+    <div class="card">
+      <div class="card-header">
+        <h2>About Me</h2>
+      </div>
 
-    <!-- update with my background -->
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae sint delectus reprehenderit aut optio exercitationem maxime nam pariatur maiores repellendus aliquam quam ea consequatur quibusdam explicabo voluptatibus doloribus, voluptas repellat?</p>
-
+      <!-- update with my background -->
+      <div class="card-body">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae sint delectus reprehenderit aut optio exercitationem maxime nam pariatur maiores repellendus aliquam quam ea consequatur quibusdam explicabo voluptatibus doloribus, voluptas repellat?</p>
+      </div>
+    </div>
+    <br>
     <!-- My education-->
-    <h2>Education</h2>
-    <hr>
+    <div class="card">
+      <div class="card-header">
+        <h2>Education</h2>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li><b>Springboard</b> - Software Development Career Program (2026)</li>
+          <li><b>WVU Institute of Technology</b> - Engineering Courses (2014 - 2015)</li>
+          <li><b>Oak Hill High School</b> - Graduated with honors (2014)</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <div class="card">
+      <div class="card-header">
+        <h2>Work Experience</h2>
+      </div>
+      <!-- work experience in table -->
 
-      <ul>
-        <li><b>Springboard</b> - Software Development Career Program (2026)</li>
-        <li><b>WVU Institute of Technology</b> - Engineering Courses (2014 - 2015)</li>
-        <li><b>Oak Hill High School</b> - Graduated with honors (2014)</li>
-      </ul>
-  
-
-    <h2>Work Experience</h2>
-    <hr>
-    <!-- work experience in table -->
-
-    <table>
-      <thead>
-        <tr>
-          <th>Company</th>
-          <th>Position</th>
-          <th>Duties</th>
-          <th>Duration</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Walmart</td>
-          <td>Stocker</td>
-          <td>
-            <ul>
-              <li>Stock shelves in a timely manner to ensure product availability for customers.</li>
-              <li>Maintain cleanliness and organization of the stockroom and sales floor.</li>
-              <li>Assist customers with locating products and answering questions.</li>
-            </ul>
-          </td>
-            <td>November 2019 - Present</td>
-        </tr>
-        <tr>
-          <td>Kroger</td>
-          <td>Produce Clerk</td>
-          <td>
-            <ul>
-              <li>Stock produce shelves and maintain freshness of products.</li>
-              <li>Ensure proper handling and storage of perishable goods.</li>
-              <li>Provide excellent customer service by assisting shoppers with their produce selections.</li>
-            </ul>
-          </td>
-          <td>May 2015 - May 2019</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h2>Projects</h2>
-    <hr>
-    <h3>Project 1</h3>
-    <h3>Project 2</h3>
-    <h3>Project 3</h3>
+      <div class="card-body">
+        <table>
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Position</th>
+              <th>Duties</th>
+              <th>Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Walmart</td>
+              <td>Stocker</td>
+              <td>
+                <ul>
+                  <li>Stock shelves in a timely manner to ensure product availability for customers.</li>
+                  <li>Maintain cleanliness and organization of the stockroom and sales floor.</li>
+                  <li>Assist customers with locating products and answering questions.</li>
+                </ul>
+              </td>
+                <td>November 2019 - Present</td>
+            </tr>
+            <tr>
+              <td>Kroger</td>
+              <td>Produce Clerk</td>
+              <td>
+                <ul>
+                  <li>Stock produce shelves and maintain freshness of products.</li>
+                  <li>Ensure proper handling and storage of perishable goods.</li>
+                  <li>Provide excellent customer service by assisting shoppers with their produce selections.</li>
+                </ul>
+              </td>
+              <td>May 2015 - May 2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <br>
+    <div class="card">
+      <div class="card-header">
+        <h2>Projects</h2>
+      </div>
+      <div class="card-body">
+        <h3>Project 1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae aut atque vitae esse exercitationem delectus maiores voluptates ea tenetur harum obcaecati blanditiis vero saepe facere, magni odit libero adipisci tempora?</p>
+      </div>
+    </div>
     <br>
 
     <!-- contact form -->
-    <h2>Let's get in touch! </h2>
-    <hr>
+    <div class="card">
+      <div class="card-header">
+        <h2>Let's get in touch!</h2>
+      </div>
 
-    <form action="#">
+    <div class="card-body">
+      <form action="#">
       <!-- name field -->
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required placeholder="Enter your name">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+      </div>
       <br>
       <!-- email field -->
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required placeholder="Enter your email">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
       <br>
       <!-- drop down menu for reason of contact -->
-      <label for="reason">Reason for Contact:</label>
-      <select id="reason" name="reason" required>
-        <option value="">Select a reason</option>
-        <option value="job">Job Inquiry</option>
-        <option value="project">Project Collaboration</option>
-        <option value="feedback">Feedback</option>
-      </select>
+      <div class="form-group">
+        <label for="reason">Reason for Contact:</label>
+        <select id="reason" name="reason" required>
+          <option value="">Select a reason</option>
+          <option value="job">Job Inquiry</option>
+          <option value="project">Project Collaboration</option>
+          <option value="feedback">Feedback</option>
+        </select>
+      </div>
       <br>
       <!-- slider for how much user likes to code -->
       <label for="interest"></label>
@@ -112,11 +139,13 @@
       <!-- message field -->
       <label for="message">Message:</label>
       <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-      <br>
       <!-- submit and clear button -->
-       <button type="reset">Clear</button>
-      <button type="submit">Submit</button>
+      <div class="form-buttons">
+        <button type="reset">Clear</button>
+        <button type="submit">Submit</button>
+      </div>
     </form>
+    </div>
 
   </body>
 </html>
